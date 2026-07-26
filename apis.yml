@@ -1,19 +1,49 @@
 aid: dverse
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/dverse.png
 name: Dverse
-description: Dverse is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Dverse is the API Evangelist network profile for Symmetry Dimensions Inc.
+  (株式会社SYMMETRY), a Tokyo-based technology company whose "DVERSE" digital-twin
+  lineage evolved into a portfolio of DX solution services, infrastructure
+  operations and maintenance support (インフラ維持管理支援), and SDTC data services.
+  The company was surfaced as a 500 Global portfolio company and added to the
+  network as an enrichment lead. The branded domain symmetry-dimensions.com now
+  redirects to the company's live site at symmetry-inc.co.jp. As of this
+  enrichment pass the company publishes a corporate/marketing site (a Nuxt
+  single-page app on Google Cloud) but no public developer portal, API
+  documentation, OpenAPI/AsyncAPI specification, SDK, CLI, MCP server, or
+  /.well-known discovery surface — so no machine-readable API artifacts could be
+  harvested. This record therefore carries company identity plus a probed
+  domain-security profile only, and remains a lead awaiting a public API surface.
 url: https://raw.githubusercontent.com/api-evangelist/dverse/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - 500-global
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: portfolio-lead-no-public-api
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Digital Twin
+- Geospatial
+- Data Visualization
+- Infrastructure
+- Digital Transformation
+- Japan
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +52,11 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://symmetry-dimensions.com
+  url: https://www.symmetry-inc.co.jp/
+- type: DomainSecurity
+  url: security/dverse-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
